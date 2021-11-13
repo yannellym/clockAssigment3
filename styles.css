@@ -1,0 +1,47 @@
+ body {
+    background-color: red;
+}
+
+.clock {
+   margin: 15%;
+  position: relative;
+  height: 50%;
+}
+
+.clockImg {
+    width: 80%;
+    height:80%;
+    margin-left: 10%;
+}
+
+.hourImg {
+    width: 20%;
+    height: 20%;
+    margin-left: 50%;
+    position: absolute;
+    top: 40%;
+    animation: rotationHour 10s infinite;
+    transform-origin: left;
+}
+
+.minuteImg {
+    width: 27%;
+    height: 20%;
+    margin-left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: rotate(-90deg);
+    animation: rotationMin 10s infinite;
+    transform-origin: center left;
+}
+
+
+@keyframes rotationHour {
+    to {transform: rotate(30deg);}
+}
+
+
+
+@keyframes rotationMin {
+    to {transform: rotate(275deg);}
+} 
